@@ -1,0 +1,118 @@
+/* Payment.css */
+
+body {
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+  }
+  
+  .payment-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    color: #ffffff;
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  }
+  
+  .payment-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #00e676;
+  }
+  
+  .cart-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  .cart-list li {
+    margin-bottom: 0.5rem;
+    background-color: #292929;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .total-price {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  .payment-methods {
+    margin-top: 2rem;
+  }
+  
+  .payment-methods label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+  }
+  
+  .invoice-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00e676;
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .invoice-btn:hover {
+    background-color: #00c853;
+  }
+  .payment-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  .payment-heading {
+    text-align: center;
+  }
+  
+  .cart-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .payment-methods label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .upi-section,
+  .card-section {
+    margin-top: 15px;
+  }
+  
+  .upi-section input,
+  .card-section input {
+    display: block;
+    margin: 5px 0 15px;
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .invoice-btn,
+  .place-order-btn {
+    padding: 10px 20px;
+    margin: 10px 5px 0 0;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .invoice-btn:hover,
+  .place-order-btn:hover {
+    background-color: #218838;
+  }
+  

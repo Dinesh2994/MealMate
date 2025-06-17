@@ -1,0 +1,35 @@
+/* src/components/Footer.css */
+
+.footer {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+  color: black;
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+  height: 120px;
+
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  margin: 0 12px;
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #28a745;
+}
+

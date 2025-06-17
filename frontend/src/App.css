@@ -1,0 +1,224 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F0F0F0;
+}
+
+/* Header Styles */
+header.head {
+  background-color: #21729e;
+  color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.userInfo {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login {
+  background-color: #ADD8E6;
+}
+
+.btn-login:hover {
+  background-color: #87CEEB;
+}
+
+.btn-signup {
+  background-color: #98FB98;
+}
+
+.btn-signup:hover {
+  background-color: #90EE90;
+}
+
+/* Footer Styles */
+footer.foot {
+  background-color: #E6E6FA;
+  color: #5F5F5F;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Home Page Styles */
+.home-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.home-page h2 {
+  font-size: 36px;
+  color: #333;
+}
+
+.home-page p {
+  font-size: 18px;
+  color: #555;
+}
+
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.cta-buttons .btn {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.features {
+  margin-top: 40px;
+  text-align: left;
+  display: inline-block;
+}
+
+.features ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.features li {
+  font-size: 18px;
+}
+
+/* Styling for Links */
+a, .react-router-link {
+  text-decoration: none;
+  color: black;
+}
+
+.react-router-link:hover {
+  cursor: pointer;
+}
+
+/* Styling for Signup and Login pages */
+.userInfo {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 450px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Styling the form */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Styling the Sign Up button */
+button {
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Styling the link */
+p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+p a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .userInfo {
+    width: 80%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  button {
+    font-size: 14px;
+  }
+}

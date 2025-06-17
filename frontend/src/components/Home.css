@@ -1,0 +1,193 @@
+/* Home.css - Modified for Unique Class Names */
+
+.home-container {
+  padding: 0;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+.home-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.home-tagline {
+  font-size: 1.4rem;
+  color: #333;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.home-quote {
+  font-size: 1rem;
+  color: #555;
+  font-family: serif;
+}
+
+.home-hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.home-hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.home-hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 20px;
+}
+
+.home-main-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.home-hero-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.home-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.home-btn {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-explore-btn {
+  background-color: #FF5733;
+  color: white;
+}
+
+.home-explore-btn:hover {
+  background-color: #E64A19;
+  transform: scale(1.05);
+}
+
+.home-learn-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.home-learn-btn:hover {
+  background-color: #43A047;
+  transform: scale(1.05);
+}
+
+.home-features-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.home-feature-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.home-feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.home-feature-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.home-features-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.home-features-section p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .home-hero-image {
+    height: 300px;
+  }
+
+  .home-main-heading {
+    font-size: 2rem;
+  }
+
+  .home-hero-text {
+    font-size: 1rem;
+  }
+
+  .home-cta-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .home-btn {
+    width: 100%;
+  }
+
+  .home-features-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-feature-card {
+    width: 90%;
+  }
+}
+
+.home-hero-image, .home-feature-image {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+
+.welcome-message {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2c3e50;
+  /* background-color: #ecf0f1; */
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 100;
+}

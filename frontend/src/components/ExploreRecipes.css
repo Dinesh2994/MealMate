@@ -1,0 +1,270 @@
+/* General styles for the main container */
+.explore-recipes {
+  font-family: sans-serif;
+  padding: 20px;
+  position: relative;
+  max-width: 800px; /* Limit width for better readability */
+  margin: 0 auto; /* Center the content */
+}
+
+/* Cart icon in the top right corner */
+.cart-icon {
+  position: absolute;
+  top: 10px;
+  right: 1px;
+  font-size: 1.5em; 
+  cursor: pointer;
+  background-color: #ffffff;
+  color: white;
+  padding: 10px;
+  border-radius: 8px; 
+  z-index: 1000;
+  transition: background-color 0.3s ease; 
+}
+
+.cart-icon:hover {
+  background-color: #ffffffc7;
+}
+
+
+.cart-popup {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 350px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+/* Cart header and close button */
+.cart-popup h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeButton {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+/* Styling for each cart item */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.cart-item span {
+  flex: 1;
+}
+
+/* Quantity controls */
+.quantity-control-cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 10px;
+}
+
+.quantity-control-cart button {
+  padding: 3px 8px;
+  background-color: #ff0000;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Buttons (Proceed to Payment and Clear Cart) */
+.pay-btn,
+.cart-popup button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+/* Payment button styling */
+.pay-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.pay-btn:hover {
+  background-color: #218838;
+}
+
+/* Clear Cart button styling */
+.clear-cart-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.clear-cart-btn:hover {
+  background-color: #c82333;
+}
+
+/* Additional message when an item is added to cart */
+.add-to-cart-msg {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(16, 156, 16);
+  padding: 15px 20px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.show-msg {
+  opacity: 1;
+}
+
+/* Type filter for recipe categories */
+.type-filter {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.type-filter button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0f0f064;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.type-filter button:hover {
+  background-color: #e0e0e0c6;
+}
+
+/* Recipe grid with responsive cards */
+.recipe-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.recipe-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-8px);
+}
+
+.recipe-card img {
+  max-width: 250px;
+  height: 250px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.recipe-card img:hover {
+  cursor: pointer;
+}
+
+/* Recipe details and buttons */
+.recipe-details {
+  margin-top: 15px;
+}
+
+.frequency-select {
+  margin-top: 15px;
+}
+
+.frequency-select label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.frequency-select select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.recipe-details button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.recipe-details button:hover {
+  background-color: #2980b9;
+}
+
+/* Recipe grid layout */
+.recipe-grid {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.recipe-grid .recipe-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.recipe-grid .recipe-card img:hover {
+  cursor: pointer;
+}
+
+.recipe-grid .recipe-card h4 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.recipe-grid .recipe-card {
+  padding: 15px;
+}
+
+/* Back button styling */
+button[onClick="handleBack"] {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #f39c12;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+}
+
+button[onClick="handleBack"]:hover {
+  background-color: #e67e22;
+}
